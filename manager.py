@@ -4,7 +4,7 @@ from flask_wtf import CSRFProtect
 from flask_sqlalchemy import SQLAlchemy
 from redis import StrictRedis
 from flask_session import Session
-from flask_script import  Manager
+from flask_script import Manager
 from flask_migrate import Migrate, MigrateCommand
 
 
@@ -35,7 +35,6 @@ class Config(object):
 
 
 app = Flask(__name__)
-
 
 # 加载配置
 app.config.from_object(Config)
